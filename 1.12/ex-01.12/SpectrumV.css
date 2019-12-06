@@ -1,0 +1,38 @@
+body{
+    background-color: whitesmoke;
+}
+h1{
+    font-family: 'Cinzel', serif;
+    text-align: center;
+}
+/* https://www.granneman.com/webdev/coding/css/centertables */
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#first{
+    background-color: rgba(60, 9, 25, 1);
+}
+#second{
+    background-color: rgba(76, 13, 39, 1);
+}
+#third{
+    background-color: rgba(76, 0, 57, 1);
+}
+#fourth{
+    background-color: rgba(58, 9, 70, 1);
+}
+/*rgba(38, 9, 81, 1)*/
+#fifth{
+    background-color: rgba(20, 20, 97, 1);
+}
+/*rgba(20, 20, 91, 1)*/
+
+
+td{
+    height: 300px;
+    width: 100px;
+    padding: 50px;
+    border: 7px solid whitesmoke;
+}
