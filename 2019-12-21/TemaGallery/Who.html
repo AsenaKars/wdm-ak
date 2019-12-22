@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+    <title>Who</title>
+    <!-- paste (before the Bootstrap link) JQuery CDN from www.code.jquery.com -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!-- paste Complete CSS & Complete Js links from www.bootstrapcdn.com -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- the Js link is useful when creating the navbar -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- Where do I find this link? Why do I need it? -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <!-- link to the css component of the website -->
+    <link rel="stylesheet" href="./CSS/Gallery.css">
+
+    <!-- mainContent font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="bg">
+    <img src="https://cdn.pixabay.com/photo/2016/02/19/11/51/world-trade-center-1210003_1280.jpg" alt="">
+  </div>
+
+    <!-- creates boxed content in bootstrap: https://getbootstrap.com/docs/3.4/css/-->
+    <!-- .container for a responsive fixed width container -->
+    <!-- the following div creates a grid system -->
+    <div class="container">
+        <div class="row">
+            <div id="mainContent" class="col-lg-12">
+              <h1>W   H   O</h1>
+                <hr>
+                <!-- represents a thick horizontal line -->
+            </div>
+            <div id="ContactPerson" class="col-lg-12">
+              <h3> person : Asena Kars</h3>
+              <h3> phone no. : (040)7xxxxxxxx</h3>
+              <h3> email : xxxxxxx@gmail.com</h3>
+            </div>
+        </div>
+    </div>
+
+   <nav class="navbar navbar-expand-lg navbar-light bg-pale fixed-top">
+    <a class="navbar-brand" href="#">
+      <img src="https://images.vexels.com/media/users/3/145773/isolated/lists/a4f1f6d6f8ba68ed67650e3feafda0ab-new-york-city-logo.png" width="120" height="80" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./Home.html">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./Feed.html">Feed</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="./Who.html">Who<span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+</nav>
+
+</body>
+</html>

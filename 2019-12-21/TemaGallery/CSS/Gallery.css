@@ -1,0 +1,109 @@
+/*body {
+    background-image: url(https://cdn.pixabay.com/photo/2016/02/19/11/51/world-trade-center-1210003_1280.jpg);
+    background-size: cover;
+    background-position: 75% 25%;
+    /* other options for this property: center/ top/ top center/ in px s/ in percentages: https://www.w3schools.com/cssref/pr_background-position.asp */
+
+/* https://www.w3schools.com/howto/howto_css_full_page.asp */
+body {
+  height: 100%;
+}
+
+/* https://css-tricks.com/perfect-full-page-background-image/ */
+#bg {
+  position: fixed;
+  top: -60%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+}
+#bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+}
+/* Make navbar background transparent */
+.bg-pale {
+  background-color: #rgba(255,255,255,0.9);
+}
+
+#mainContent {
+    font-family: 'Cormorant Garamond', serif;
+    opacity: 0.6;
+    text-align: center;
+    padding-top: 20%;
+}
+.navbar-nav > li {
+  margin-left:20px;
+  margin-right:20px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: large;
+}
+
+.navbar-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: large;
+}
+
+.navbar {
+  justify-content: center;
+
+}
+
+/*
+.jumbotron {
+    padding-top: 10%;
+    background-color: #82A5BB;
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    opacity: 0.5;
+}
+*/
+
+
+/*row > img {
+    border-radius: 8px;
+    height: 200px;
+
+}
+
+.image {
+  object-fit: cover;
+
+}*/
+
+
+/*.gallery {
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.gallery .horizontal-gallery {
+    display: inline;*/
+}
+
+
+.carousel-inner > .carousel-item > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-caption {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: large;
+}
+
+
+#ContactPerson {
+    font-family: 'Cormorant Garamond', serif;
+    opacity: 0.6;
+    text-align: center;
+}
