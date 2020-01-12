@@ -1,0 +1,84 @@
+body {
+/*    background-image:url(https://); */
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+#t1 {
+    color: red;
+    opacity: 75%;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+#t2 {
+    color: cadetblue;
+
+}
+
+#t3 {
+    color: rgb(66,33,99);
+/*rgb(red quantity, green q, blue q), q betweeen 0 and 255 */
+    font-family: sans-serif;
+    /* traducere fara- infrumusetare*/
+}
+
+#t4 {
+    color: rgba(66,33,99,0.8);
+/*rgba(red, green, blue, alfa), alfa tends to measure the transperancy/vividity of the colour */
+/*if values are equal, they tend to give a greyish value */
+}
+
+#t5 {
+    color: #aabbcc;
+/* #aa bb cc [dd] (rgba) aa,bb,cc represent in base 16  */
+/* ff=255 */
+    font-family: cursive;
+}
+
+#t6 {
+    color: #663399aa;
+    font-family: fantasy;
+
+}
+
+#t7 {
+    color: #f07200;
+
+}
+
+#t8 {
+    color: ;
+/* hsl = */
+}
+
+#t9 {
+    color: ;
+
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+.div-colours {
+    background-color: aqua;
+}
+
+span {
+    color : rebeccapurple;
+}
+
+p span {
+    color:red;
+}
+
+[require] {
+    background-color: blue;
+}
+/*_ snake case; - */
+
+
+
+

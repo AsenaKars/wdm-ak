@@ -1,0 +1,28 @@
+/**/
+/*id seleector*/
+#text
+
+.ceva{
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}
+
+/*tag selector*/
+input{
+    color: red;
+}
+/*all the tds and ths*/
+td,th {
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+
+}
+/*all the paragraphes inside form*/
+form p{
+    color:green;
+}
+.bg{
+    bacckground-color: whitesmoke;
+}

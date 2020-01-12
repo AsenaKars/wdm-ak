@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TABLE AND FORMS</title>
+    <link rel="stylesheet" type="text/css" href="./ex-tables and forms.css">
+</head>
+<body>
+    <table class="ceva">
+        <thead>
+            <th>nr crt</th>
+            <th>nume</th>
+            <th>prenume</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Kars</td>
+                <td>Asena</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>K</td>
+                <td>A</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <!-- br e spatiu liber -->
+    <form>
+        <p>Completati formularul</p>
+        <label for="text">Nume:</label>
+        <input id="text" type="text" name="text-input" placeholder="ceva"><br>
+
+        <label for="ch">Bifeaza!</label>
+        <input id="ch" type="checkbox" name="check-input"><br>
+
+        <textarea name="area-input"></textarea><br>
+        <button type="submit">Done</button><br>
+        <!-- in mode default button da refresh la pag; altfel, trebuie sa-i dai un action -->
+
+        <label for="ch">Radios</label>
+        <div class="bg">
+            <input type="radio" name="radio-input" value="1"><br>
+            <input type="radio" name="radio-input" value="2"><br>
+            <input type="radio" name="radio-input" value="3"><br>
+        </div>
+        <!-- daca mai multe radio uri au acelasi nume, atunci ele se refera la acelasi input -->
+
+        <input type="email" name="email-input">
+
+        <input type="button" name="butoon-input" value="Done 2"><br>
+
+    </form>
+    <br>
+    <form>
+        <!-- required and hidden are boolean attributes -->
+        <input type="email" placeholder="username" required><br>
+        <input type="password" placeholder="password" hidden><br>
+        <input type="submit" value="Login"><br>
+    </form>
+
+
+</body>
+</html>
