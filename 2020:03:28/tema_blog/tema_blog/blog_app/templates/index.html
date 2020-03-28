@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% block content %}
+<style>
+    body {
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        background-color: #1C1C1C;
+    }
+
+    .card-bg-custom {
+        background-color: #B1B1B5 !important;
+    }
+
+    .pagination > li > a
+    {
+        background-color: black;
+        color: grey;
+    }
+
+</style>
+
+<header class="titleBand">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class=" col-md-8 col-md-10 mx-auto">
+                <div class="site-heading">
+                    <h3 class=" site-heading my-4 mt-3 text-muted">Welcome to my Blog </h3>
+                    <p class="text-secondary">Django know-hows for the curious
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <div class="row">
+        <!-- blog entries column -->
+        <div class="col-md-8 mt-3 left">
+            {% for post in post_list %}
+            <div class="card card-bg-custom mb-4">
+                <div class="card-body">
+                    <h2 class="card-title">{{ post.title }}</h2>
+                    <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
+                    <p class="card-text">{{post.content|slice:":300" }}</p>
+                    <a href="{% url 'post_detail' post.slug  %}" class="btn btn-dark">Read More &rarr;</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% block sidebar %}
+        {% include 'sidebar.html' %}
+        {% endblock sidebar %}
+    </div>
+{% if is_paginated %}
+    <nav aria-label="Page navigation container">
+    <ul class="pagination justify-content-center">
+      {% if page_obj.has_previous %}
+        <li>
+          <a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; prev</a>
+        </li>
+      {% endif %}
+
+      {% if page_obj.has_next %}
+        <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> next &raquo;</a></li>
+      {% endif %}
+    </ul>
+    </nav>
+</div>
+{% endif %}
+{%endblock%}
