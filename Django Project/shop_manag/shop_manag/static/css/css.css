@@ -1,0 +1,36 @@
+#logo {
+    width: 40px;
+}
+
+body {
+    background-color: #fff9ec;
+}
+
+#total-orders {
+    background-color: #457b9d;
+
+}
+
+#orders-delivered {
+    background-color: #b5838d;
+
+}
+
+#orders-pending {
+    background-color: #708d81;
+
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 5%;
+  text-align: center;
+  <!-- https://stackoverflow.com/questions/21499317/footer-will-not-stay-at-bottom-of-page -->
+}
+
+div {
+    padding: 0em 20px 0em;
+    <!-- https://www.sitepoint.com/set-css-margins-padding-cool-layout-tricks/ -->
+}

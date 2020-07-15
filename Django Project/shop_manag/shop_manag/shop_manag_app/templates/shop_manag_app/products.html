@@ -1,0 +1,38 @@
+{% extends 'shop_manag_app/main.html' %}
+
+{% block content %}
+
+<br>
+
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+        <div class="card card-body">
+            <center><h5><b>Products</b></h5></h5></h5></center>
+        </div>
+        <div class="card card-body">
+            <table class="table">
+                <tr>
+                    <th>Product</th>
+                    <th>Category</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+
+                {% for product in products %}
+                    <tr>
+                        <td>{{ product.name }}</td>
+                        <td>{{ product.tag }}</td>
+                        <td>{{ product.description }}</td>
+                        <td>{{ product.price }}</td>
+                    </tr>
+
+                {% endfor %}
+
+            </table>
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+</div>
+
+{% endblock %}
